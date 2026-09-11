@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>بيت الشرق | تواصل معنا</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="../css/all.min.css" />
+  <link rel="stylesheet" href="../css/toastr.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<header>
+    <nav class="hed">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">بيت الشرق</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="offres.html">المنتجات/العروض</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="auht.html">تسجيل الدخول</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="contact-hero">
+    <h1>تواصل معنا</h1>
+    <p>يسعدنا خدمتك في أي وقت</p>
+  </section>
+
+  <section class="contact-wrap">
+
+    <!-- ===== نموذج التواصل مع Validation ===== -->
+    <form id="contactForm" class="contact-form">
+      <h4>أرسل رسالة</h4>
+      <div class="mb-3">
+        <label class="form-label" for="contactName">الاسم</label>
+        <input type="text" id="contactName" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="contactEmail">البريد الإلكتروني</label>
+        <input type="email" id="contactEmail" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="contactMessage">الرسالة</label>
+        <textarea id="contactMessage" class="form-control" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-gold">إرسال <i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+
+    <!-- ===== معلومات التواصل + جدول ساعات العمل ===== -->
+    <div class="contact-info">
+      <h4>معلومات التواصل</h4>
+      <ul>
+        <li><i class="fa-solid fa-phone"></i> 0501234567</li>
+        <li><i class="fa-solid fa-envelope"></i> info@bayt-alsharq.com</li>
+        <li><i class="fa-solid fa-location-dot"></i> الرياض، المملكة العربية السعودية</li>
+      </ul>
+
+      <h5 class="mt-4">ساعات العمل</h5>
+      <table class="table table-bordered text-center">
+        <thead>
+          <tr>
+            <th>اليوم</th>
+            <th>وقت العمل</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>السبت - الخميس</td>
+            <td>9 صباحاً - 10 مساءً</td>
+          </tr>
+          <tr>
+            <td>الجمعة</td>
+            <td>2 ظهراً - 10 مساءً</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-cols">
+      <div>
+        <h5>بيت الشرق</h5>
+        <p>للمفروشات والستائر - أناقة وفخامة تميزك منذ أكثر من عشرين عاماً</p>
+      </div>
+      <div>
+        <h5>روابط سريعة</h5>
+        <ul>
+          <li><a href="../index.html">الرئيسية</a></li>
+          <li><a href="offres.html">المنتجات</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>معلومات التواصل</h5>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> 0501234567</li>
+          <li><i class="fa-solid fa-envelope"></i> info@bayt-alsharq.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> الرياض، المملكة العربية السعودية</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      بيت الشرق © 2026 - جميع الحقوق محفوظة
+    </div>
+  </footer>
+
+  <script src="../js/jquery-4.0.0.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/toastr.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>بيت الشرق | المنتجات</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="../css/all.min.css" />
+  <link rel="stylesheet" href="../css/toastr.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="hed">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">بيت الشرق</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="offres.html">المنتجات/العروض</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="auht.html">تسجيل الدخول</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="products-hero">
+    <h1 class="fw-bold" >المنتجات</h1>
+    <p>مجالس مختارة بعناية لمنزلك</p>
+  </section>
+
+  <!-- ===== قائمة المنتجات (Grid) ===== -->
+<!-- ===== قائمة المنتجات (Grid) ===== -->
+  <section class="products-grid">
+
+    <div class="product-card">
+      <div class="product-img-box">
+        <img src="../img/ChatGPT Image 6 سبتمبر 2026، 10_24_00 م.png" alt="مجلس عربي فاخر" class="product-img" />
+      </div>
+      <div class="product-info">
+        <h5>مجلس عربي فاخر</h5>
+        <p class="price">4500 ر.س</p>
+        <button class="btn btn-gold btn-sm"
+          onclick="openAjaxModal('../Ajax/product-modal.html', 'productModal')">عرض التفاصيل</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box">
+        <img src="../img/ChatGPT Image 6 سبتمبر 2026، 11_52_38 م.png" alt="مجلس ملكي كلاسيكي" class="product-img" />
+      </div>
+      <div class="product-info">
+        <h5>مجلس ملكي كلاسيكي</h5>
+        <p class="price">5200 ر.س</p>
+        <button class="btn btn-gold btn-sm"
+          onclick="openAjaxModal('../Ajax/product-modal.html', 'productModal')">عرض التفاصيل</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box">
+        <img src="../img/ChatGPT Image Sep 7, 2026, 01_07_04 AM.png" alt="مجلس مودرن أنيق" class="product-img" />
+      </div>
+      <div class="product-info">
+        <h5>مجلس مودرن أنيق</h5>
+        <p class="price">3800 ر.س</p>
+        <button class="btn btn-gold btn-sm"
+          onclick="openAjaxModal('../Ajax/product-modal.html', 'productModal')">عرض التفاصيل</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box">
+        <img src="../img/ChatGPT Image Sep 7, 2026, 01_26_00 AM.png" alt="مجلس تراثي أصيل" class="product-img" />
+      </div>
+      <div class="product-info">
+        <h5>مجلس تراثي أصيل</h5>
+        <p class="price">4100 ر.س</p>
+        <button class="btn btn-gold btn-sm"
+          onclick="openAjaxModal('../Ajax/product-modal.html', 'productModal')">عرض التفاصيل</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box">
+        <img src="../img/ChatGPT Image Sep 7, 2026, 01_51_27 AM.png" alt="مجلس عائلي مريح" class="product-img" />
+      </div>
+      <div class="product-info">
+        <h5>مجلس عائلي مريح</h5>
+        <p class="price">3200 ر.س</p>
+        <button class="btn btn-gold btn-sm"
+          onclick="openAjaxModal('../Ajax/product-modal.html', 'productModal')">عرض التفاصيل</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-box">
+        <img src="../img/ChatGPT Image Sep 7, 2026, 12_50_58 AM.png" alt="مجلس ضيافة ذهبي" class="product-img" />
+      </div>
+      <div class="product-info">
+        <h5>مجلس ضيافة ذهبي</h5>
+        <p class="price">4750 ر.س</p>
+        <button class="btn btn-gold btn-sm"
+          onclick="openAjaxModal('../Ajax/product-modal.html', 'productModal')">عرض التفاصيل</button>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="footer-cols">
+      <div>
+        <h5>بيت الشرق</h5>
+        <p>للمفروشات والستائر - أناقة وفخامة تميزك منذ أكثر من عشرين عاماً</p>
+      </div>
+      <div>
+        <h5>روابط سريعة</h5>
+        <ul>
+          <li><a href="../index.html">الرئيسية</a></li>
+          <li><a href="offres.html">المنتجات</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>معلومات التواصل</h5>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> 0501234567</li>
+          <li><i class="fa-solid fa-envelope"></i> info@bayt-alsharq.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> الرياض، المملكة العربية السعودية</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      بيت الشرق © 2026 - جميع الحقوق محفوظة
+    </div>
+  </footer>
+
+  <div id="modalContainer"></div>
+
+  <script src="../js/jquery-4.0.0.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/toastr.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
