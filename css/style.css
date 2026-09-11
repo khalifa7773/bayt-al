@@ -1,0 +1,562 @@
+/* ===== متغيرات الألوان ===== */
+:root {
+  --dark: #000003;
+  --dark-2: #1b1c2b;
+  --gold: #ffcf77;
+  --cream: #f7f1e4;
+  --text-dark: #222;
+}
+
+/* ===== إعادة ضبط عامة لضمان المرونة على كل الشاشات ===== */
+* ,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== الهيدر و التنقل ===== */
+.hed{
+  background-color: var(--dark);
+  color: #f5f5f5;
+  padding: 15px 20px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.container ul li a{
+  color: #f5f5f5 !important;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+
+}
+.container ul li a:hover{
+  color: var(--gold) !important;
+  
+}
+.hed .container .navbar-brand{
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 1.5rem;  
+}
+/* ==
+=== قسم الهيرو ===== */
+.hero{
+  display: flex;
+  flex-direction: column;
+}
+.hero h1 span {
+  color: var(--gold);
+ display: block;
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  color: var(--dark);
+  font-weight: bold;
+  border-radius: 10px;
+  transition: color 0.3s;
+}
+
+.btn-gold:hover {
+  background-color:#ffffff;
+  color:var(--gold)
+}
+/* ===== قسم الفيديو والنص بأبعاد عريضة ===== */
+.video-section {
+  padding: 50px;
+  background-color: var(--dark);
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.video-text {
+  flex: 1;
+}
+
+.video-text h2 {
+  color: var(--gold);
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.video-text p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #ddd;
+  font-size: medium;
+}
+
+.video-box {
+  flex: 1;
+  width: 100%;
+  aspect-ratio: 15 /9; /* تحديد النسبة العريضة للفيديو */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--gold);
+  background-color: #000;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ملء الإطار العريض بدون تمطيط */
+  display: block;
+}
+
+/* التجاوب مع شاشات الجوال */
+@media (max-width: 768px) {
+  .video-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===== قسم السلايدر (WowSlider) ===== */
+.features-title,.container .title,.story h1,h4{
+  grid-column: 1 / -1;       /* تجعل العنوان يمتد عبر كل الأعمدة (من العمود الأول حتى الأخير) */
+  text-align: center;         /* وضع النص في منتصف الشاشة أفقياً */
+  color: var(--gold) ;    /* إعطاء العنوان اللون الذهبي الخاص بالهوية */
+  font-size: 2.2rem;          /* حجم خط بارز ومناسب للعنوان الرئيسي */
+  font-weight: bold;          /* جعل الخط عريضاً وثقيلاً */
+  margin-bottom: 25px;        /* مسافة فارغة أسفل العنوان لإبعاده عن الكروت الأربعة */
+}
+.slider-section {
+  padding:20px 2px;
+  background-color: var(--cream);
+}
+
+/* ===== قسم المميزات (Grid) ===== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: var(--dark);
+  text-align: center;
+  padding: 25px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card p,h5{
+  color:#ffffff ;
+}
+.feature-card i {
+  color: var(--gold);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+/* ===== قسم الدعوة للتواصل ===== */
+.cta {
+  background-color:var(--cream);
+ color: var(--dark);
+  text-align: center;
+  padding: 60px 20p
+}
+
+/* ===== الفوتر ===== */
+footer {
+  background-color: var(--dark);
+  color: #ccc;
+  padding: 40px 20px 20px;
+  margin-top:30px;
+}
+
+.footer-cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-cols h5 {
+  color: var(--gold);
+  margin-bottom: 15px;
+}
+
+.footer-cols ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-cols ul li {
+  margin-bottom: 8px;
+}
+.footer-cols ul li i{
+  color: var(--gold);
+}
+
+.footer-cols ul li a {
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer-cols ul li a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 25px;
+  padding-top: 15px;
+  font-size: 0.85rem;
+}
+
+/* ===== صفحة من نحن (Flexbox) ===== */
+.story {
+  background-color: var(--cream);
+  color: var(--dark);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.story-text {
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background-color: var(--dark);
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.value-card i {
+  color: var(--gold);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.value-card P{
+  color: var(--cream);
+}
+/* ===== صفحة المنتجات ===== */
+.products-hero {
+  background-color: var(--cream);
+  color:var(--gold);
+  text-align: center;
+  padding: 50px 20px;
+}
+.products-hero P{
+  color: var(--dark);
+  font-size: x-large;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.product-card .product-info {
+  padding: 15px;
+}
+
+.product-card .price {
+  color: var(--dark);
+  font-weight: bold;
+}
+/* ===== صفحة التواصل ===== */
+.contact-hero {
+  background-color: var(--cream);
+  color: var(--gold);
+  text-align: center;
+  padding: 50px 20px;
+}
+.contact-hero P{
+  color: var(--dark);
+}
+.contact-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.contact-form,
+.contact-info {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 1 1 300px;
+}
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+.contact-info ul li {
+  margin-bottom: 12px;
+}
+.contact-info ul li i {
+  color: var(--gold);
+  margin-left: 10px;
+}
+/* ===== صفحة الدخول / إنشاء حساب ===== */
+.auth-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+.auth-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 35px;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.auth-card h3 {
+  margin-bottom: 5px;
+}
+/* ===== Media Queries - الاستجابة ===== */
+@media (max-width: 992px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 50px 15px;
+  }
+}
+.product-img-box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+/* ============================= */
+/* القائمة الجانبية للموبايل */
+/* ============================= */
+
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 1100;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 27px;
+    height: 3px;
+    background-color: var(--gold);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* الخلفية الشفافة خلف القائمة */
+#navOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 999;
+}
+
+/* ============================= */
+/* الهاتف والتابلت */
+/* ============================= */
+
+@media (max-width: 991px) {
+
+    .hed {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .hed .container {
+        position: relative;
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -300px;
+
+        width: 280px;
+        height: 100vh;
+
+        margin: 0;
+        padding: 90px 25px 30px;
+
+        background-color: var(--dark);
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        z-index: 1050;
+
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.25);
+
+        transition: right 0.35s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 15px 10px;
+
+        color: #f5f5f5 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        text-align: right;
+
+        transition: all 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+        color: var(--gold) !important;
+        padding-right: 18px;
+    }
+
+    #navOverlay.active {
+        display: block;
+    }
+
+    /* حركة الهمبرجر إلى X */
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* شاشات الهاتف الصغيرة */
+@media (max-width: 576px) {
+
+    .nav-links {
+        width: 250px;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+    }
+}
