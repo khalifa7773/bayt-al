@@ -1,0 +1,25 @@
+<!-- هذا الملف يتم تحميله عبر Ajax عند الضغط على زر "تواصل معنا" بالصفحة الرئيسية -->
+<div class="modal fade" id="contactModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">تواصل سريع</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+      </div>
+      <div class="modal-body">
+        <form id="quickContactForm">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="الاسم" required />
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="رقم الجوال" required />
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="رسالتك" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold w-100">إرسال</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
