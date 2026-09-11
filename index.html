@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>بيت الشرق | الرئيسية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/toastr.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+ 
+</head>
+<body>
+
+  <!-- ===== الهيدر ===== -->
+ <header>
+    <nav class="hed">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">بيت الشرق</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="/html/about.html">من نحن</a></li>
+                <li><a href="/html/offres.html">المنتجات/العروض</a></li>
+                <li><a href="/html/contact.html">تواصل معنا</a></li>
+                <li><a href="/html/auht.html">تسجيل الدخول</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="navOverlay"></div>
+</header>
+    
+  <!-- ===== الهيرو ===== -->
+  <section class="hero text-center py-5">
+  <h1 class="fw-bold">
+    <span class="d-block mb-2">بيت الشرق</span>
+    للمفروشات والستائر
+  </h1>
+  <p class="mx-auto mb-4" style="max-width: 600px;">
+    نقدم لك أرقى تشكيلة من المفروشات والستائر لتزيين منزلك بأناقة وفخامة
+  </p>
+  <div>
+    <a href="html/offres.html" class="btn btn-gold px-10 py-10" >تصفح المنتجات</a>
+  </div>
+</section> 
+<!-- ===== قسم الفيديو والنص ===== -->
+  <section class="video-section">
+    <div class="container video-container">
+      
+      <!-- النص على اليمين -->
+      <div class="video-text">
+        <h2>تعرف على بيت الشرق</h2>
+        <p>
+          نأخذك في جولة سريعة داخل معرضنا لنعرض لك أحدث تصاميم المجالس والستائر الفاخرة التي تميزت بالجودة والدقة على مدار 20 عاماً.
+        </p>
+        <a href="html/about.html" class="btn btn-gold">اقرأ المزيد عنا</a>
+      </div>
+<div class="video-box">
+  <video autoplay muted loop playsinline controls poster="img/ChatGPT Image Sep 7, 2026, 01_27_32 AM.png">
+    <source src="videos/المكان المسؤول عن فخامة منزلك😉🔥✨️(720P_HD).mp4" type="video/mp4" />
+    متصفحك لا يدعم تشغيل الفيديو.
+  </video>
+</div>
+    </div>
+  </section>
+  <!-- ===== سلايدر الصور (WowSlider) ===== -->
+  <section class="slider-section">
+    <div class="container">
+      <div class="fw-bold mb-2 title">منتجاتنا</div>
+    </div>
+    <div id="wowslider-container1">
+    <iframe src="wowslider/wowslider.html" scrolling="no" style="width:800px; height:450px; max-width:100%; overflow:hidden; border:none; padding:0; margin:0 auto; display:block;"></iframe>
+    </div>
+  </section>
+
+  <!-- ===== المميزات (Grid) ===== -->
+  <section class="features">
+    <h2 class="features-title">مميزاتنا</h2>
+    
+    <div class="feature-card">
+      <i class="fa-solid fa-medal"></i>
+      <h5>خبرة طويلة</h5>
+      <p>أكثر من عشرين عاماً في المجال</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-truck"></i>
+      <h5>توصيل مجاني</h5>
+      <p>توصيل لجميع مناطق المملكة</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-gem"></i>
+      <h5>جودة عالية</h5>
+      <p>خامات فاخرة تدوم طويلاً</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-couch"></i>
+      <h5>تشكيلة واسعة</h5>
+      <p>مفروشات وستائر بتصاميم متنوعة</p>
+    </div>
+  </section>
+
+  <!-- ===== دعوة للتواصل (زر يفتح Modal عبر Ajax) ===== -->
+  <section class="cta">
+    <h2>هل تريد معرفة المزيد؟</h2>
+    <p>تواصل معنا واستفسر عن أي اختيار يناسب ذوقك</p>
+    <button class="btn btn-gold" onclick="openAjaxModal('Ajax/contact-modal.html', 'contactModal')">تواصل معنا</button>
+  </section>
+
+  <!-- ===== الفوتر ===== -->
+  <footer>
+    <div class="footer-cols">
+      <div>
+        <h5>بيت الشرق</h5>
+        <p>للمفروشات والستائر - أناقة وفخامة تميزك منذ أكثر من عشرين عاماً</p>
+      </div>
+      <div>
+        <h5>روابط سريعة</h5>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="html/offres.html">المنتجات</a></li>
+          <li><a href="html/about.html">من نحن</a></li>
+          <li><a href="html/contact.html">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>معلومات التواصل</h5>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> 784151015</li>
+          <li><i class="fa-solid fa-envelope"></i> info@bayt-alsharq.com</li>
+          <li><i class="fa-solid fa-location-dot"></i>اليمن-صنعاء-شارع هائل  </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      بيت الشرق © 2026 - جميع الحقوق محفوظة
+    </div>
+  </footer>
+
+  <!-- حاوية يتم تحميل محتوى الـ Modal بداخلها عبر Ajax -->
+  <div id="modalContainer"></div>
+
+  <script src="js/jquery-4.0.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/toastr.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
